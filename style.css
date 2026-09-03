@@ -1,0 +1,326 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #eaf2f8;
+  color: #2c3e50;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #1f4e79;
+  padding: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+nav a:hover {
+  background-color: #2980b9;
+}
+
+/* Main */
+main {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  margin: 30px 0;
+  padding: 40px;
+  border-radius: 12px;
+}
+
+h1,
+h2,
+h3 {
+  color: #1f4e79;
+}
+
+/* Home */
+#home {
+  text-align: center;
+  padding: 80px 30px;
+  background-color: #d6eaf8;
+  border-radius: 20px;
+}
+
+#home h1 {
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #aed6f1;
+}
+
+#home p {
+  font-size: 18px;
+}
+
+/* Buttons */
+.button-container {
+  margin-top: 25px;
+}
+
+.button {
+  background-color: #2980b9;
+  color: white;
+  padding: 12px 20px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover {
+  background-color: #1f618d;
+}
+
+.button:active {
+  background-color: #154360;
+}
+
+/*Audio*/
+.music {
+  margin-top: 50px;
+}
+
+/* About & Skills */
+#about {
+  background-color: #ffffff;
+}
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.profile,
+.bio,
+.skills {
+  flex: 1;
+  min-width: 250px;
+  padding: 20px;
+  text-align: justify;
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile img {
+  width: 100%;
+  max-width: 250px;
+  border-radius: 50%;
+  border: 5px solid #85c1e9;
+}
+
+/* Lists */
+li {
+  margin: 8px;
+}
+
+/* Education */
+#education {
+  background-color: #fef9e7;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+  margin: 10px 0;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+
+th,
+td {
+  border: 1px solid #aed6f1;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #2980b9;
+  color: white;
+}
+
+/* Achievements */
+#achievements {
+  background-color: #e8f8f5;
+}
+
+.achievement-title {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 40px;
+}
+
+.achievement-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.achievement {
+  background-color: white;
+  border: 1px solid #a3e4a8;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achievement img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 10px;
+}
+
+.achievement h3 {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+/* Portfolio*/
+#media {
+  background-color: #f4ecf7;
+}
+
+.project {
+  background-color: white;
+  border: 1px solid #d2b4de;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* Media */
+audio {
+  max-width: 500px;
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  aspect-ratio: 2 / 1;
+  border: none;
+}
+
+/* Footer */
+footer {
+  background-color: #1f4e79;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  #home {
+    padding: 60px 20px;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .technical-skills,
+  .other-skills {
+    width: 50%;
+  }
+
+  .achievement {
+    width: 45%;
+  }
+
+  .achievement img {
+    max-width: 220px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 8px;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  section {
+    margin: 15px 0;
+    padding: 20px;
+  }
+
+  #home h1 {
+    font-size: 30px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .skills {
+    flex-direction: column;
+  }
+
+  .technical-skills,
+  .other-skills {
+    width: 100%;
+  }
+
+  th,
+  td {
+    padding: 8px;
+  }
+
+  .achievement {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
